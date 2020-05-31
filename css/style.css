@@ -588,10 +588,6 @@ select {
 html {
   overflow: hidden; }
 
-h2 {
-  margin: 15px 0 35px; }
-
-/* Layout */
 .ba-playlist-list {
   background: url("../img/font.jpg") no-repeat center;
   background-size: cover;
@@ -604,9 +600,8 @@ h2 {
   padding: 30px 20px;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4); }
   .ba-playlist__title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500; }
+    font: 500 25px/1.4 Lora, serif;
+    text-align: center; }
   .ba-playlist__list {
     list-style: none;
     padding-left: 0; }
@@ -625,18 +620,19 @@ h2 {
     display: flex;
     align-items: center; }
   .ba-music__duration {
-    padding-right: 10px; }
+    font-size: 80%;
+    color: #948e8e; }
     .ba-music__duration:after {
-      content: '|';
+      content: "|";
       padding-left: 10px; }
   .ba-music__artist {
-    text-transform: capitalize; }
-  .ba-music__duration, .ba-music__artist {
-    margin: 0 0 5px;
+    margin: 8px;
+    color: #948e8e;
+    text-transform: capitalize;
     font-size: 80%; }
   .ba-music__title {
-    margin: 0;
-    font-weight: 500; }
+    text-transform: capitalize;
+    color: #7176d1; }
     .ba-music__title::first-letter {
       text-transform: uppercase; }
 
