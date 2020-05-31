@@ -1,0 +1,94 @@
+@import 'normalize';
+@import 'layout';
+@import 'elements';
+
+
+html{
+	overflow: hidden;
+}
+
+h2 {
+  margin: 15px 0 35px;
+}
+
+/* Layout */
+
+.ba-playlist-list {
+  background: url('../img/font.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding: 5%;
+}
+
+.ba-playlist {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__inner {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.ba-music {
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__duration {
+    padding-right: 10px;
+    &:after {
+      content: '|';
+      padding-left: 10px;
+    }
+  }
+
+  &__artist {
+    text-transform: capitalize;
+  }
+
+  &__duration,  &__artist {
+    margin: 0 0 5px;
+    font-size: 80%;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.ba-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  fill: hotpink;
+  
+  &:hover {
+    fill: black;
+  }
+}
